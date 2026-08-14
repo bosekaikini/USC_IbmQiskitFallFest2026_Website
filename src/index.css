@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* seamless, warm-neutral dark base — one continuous surface, not stacked panels */
+  --color-q-black: #08080b;
+  --color-q-dark: #0d0d12;
+  --color-q-panel: #121218;
+  --color-q-border: rgba(255, 255, 255, 0.08);
+  --color-q-border-soft: rgba(255, 255, 255, 0.05);
+
+  /* single restrained accent story: violet -> aqua, used consistently everywhere */
+  --color-q-accent: #7c6cf6;
+  --color-q-accent-soft: #7c6cf633;
+  --color-q-accent-2: #4fd8c4;
+  --color-q-accent-2-soft: #4fd8c433;
+
+  /* muted gate accents — same family, lower saturation so the palette still reads as one system */
+  --color-q-violet: #8b7cf6;
+  --color-q-aqua: #4fd8c4;
+  --color-q-rose: #ef9fb8;
+  --color-q-amber: #e8b877;
+  --color-q-blue: #7aa8f0;
+
+  --color-q-muted: #6b6b78;
+  --color-q-text: #f1f0f4;
+  --color-q-text-dim: #a3a2ae;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Fraunces', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #08080b;
+  color: #f1f0f4;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #7c6cf655;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d12;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c6cf6;
+  border-radius: 2px;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes wave-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gate-pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: translateY(6px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+.animate-wave-in {
+  animation: wave-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.gate-pop {
+  animation: gate-pop 0.25s ease forwards;
+}
+
+.pop-in {
+  animation: pop-in 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.soft-pulse {
+  animation: soft-pulse 2.4s ease-in-out infinite;
+}

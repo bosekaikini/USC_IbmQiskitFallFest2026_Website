@@ -1,0 +1,10 @@
+{
+  "description": "Provides event details, interactive quantum circuit simulation, and registration for IBM Qiskit Fall Fest 2026 attendees at University of South Carolina.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
