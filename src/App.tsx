@@ -766,7 +766,7 @@ function Hero() {
         </h1>
 
         <p className="font-mono text-xs text-[var(--color-q-muted)] tracking-widest mb-3 uppercase">
-          Columbia, SC · Nov 6-8, 2026
+          Columbia, SC · Nov 13-15, 2026
         </p>
 
         <p className="font-mono text-[11px] text-[var(--color-q-text-dim)] tracking-widest mb-12 uppercase">
@@ -839,7 +839,7 @@ function About() {
     {
       type: "Workshop",
       title: "Challenge Tracks",
-      desc: "Choose from beginner, intermediate, and advanced challenges in quantum chemistry, optimization, Hamiltonian simulation, and quantum hardware.",
+      desc: "Work through mini IBM challenges for different experience levels alongside the overall prompts in quantum chemistry, optimization, and Hamiltonian simulation.",
     },
     {
       type: "Talk",
@@ -906,7 +906,7 @@ function About() {
             {[
               { label: "40 hrs", sub: "of hacking" },
               { label: "~80", sub: "participants" },
-              { label: "4", sub: "challenge areas" },
+              { label: "3", sub: "overall prompts" },
               { label: "Free", sub: "registration" },
             ].map((s) => (
               <div
@@ -975,61 +975,67 @@ function About() {
 function Schedule() {
   const events = [
     {
-      day: "Friday, Nov 6",
+      day: "Friday, Nov 13",
       time: "5:00 PM",
       title: "Opening Ceremony",
       desc: "Welcome, weekend overview, challenge briefing, and event orientation.",
     },
     {
-      day: "Friday, Nov 6",
+      day: "Friday, Nov 13",
       time: "5:30 PM",
       title: "Math Background + Qiskit Tutorial",
       desc: "A beginner-friendly introduction to the concepts and tools used during the weekend.",
     },
     {
-      day: "Friday, Nov 6",
+      day: "Friday, Nov 13",
       time: "6:30 PM",
       title: "Quantum Possibilities + Prompts",
       desc: "Learn what is possible with the challenge prompts, then review the available resources before prompts release at 7:30 PM.",
     },
     {
-      day: "Saturday, Nov 7",
+      day: "Saturday, Nov 14",
       time: "10:00 AM–7:30 PM",
-      title: "Talks, Workshops & Challenge Briefings",
-      desc: "Talks on quantum chemistry, optimization, Hamiltonian simulation, and quantum hardware, with challenge briefings throughout the day.",
+      title: "Guest Talks & Challenge Workshops",
+      desc: "Several guest speakers explore quantum chemistry, quantum optimization, and Hamiltonian simulation, alongside briefings for mini IBM challenges and the overall prompts.",
     },
     {
-      day: "Saturday, Nov 7",
+      day: "Saturday, Nov 14",
+      time: "6:00 PM",
+      title: "Tentative Hardware Demonstration",
+      desc: "An accessible demonstration of quantum hardware and the systems that support the day's talks and challenges.",
+    },
+    {
+      day: "Saturday, Nov 14",
       time: "11:59 PM",
-      title: "Challenge Submissions Due",
-      desc: "Submit challenge entries by the deadline. Mentors remain available for questions during the hacking period.",
+      title: "Mini Challenge Submissions Due",
+      desc: "Submit mini IBM challenge entries by the deadline while continuing work on the overall prompts.",
     },
     {
-      day: "Sunday, Nov 8",
+      day: "Sunday, Nov 15",
       time: "8:30 AM",
       title: "Hackathon Submissions Due",
       desc: "Finalize and submit your hackathon project and any challenge decisions.",
     },
     {
-      day: "Sunday, Nov 8",
+      day: "Sunday, Nov 15",
       time: "9:00 AM–12:00 PM",
       title: "Breakfast + Judging",
       desc: "Judges review projects and challenge entries while teams share their work.",
     },
     {
-      day: "Sunday, Nov 8",
+      day: "Sunday, Nov 15",
       time: "10:00 AM",
       title: "Final Keynote",
       desc: "A final open-topic keynote before the closing program.",
     },
     {
-      day: "Sunday, Nov 8",
+      day: "Sunday, Nov 15",
       time: "12:00 PM–1:00 PM",
       title: "Lunch",
       desc: "Take a break before the closing program.",
     },
     {
-      day: "Sunday, Nov 8",
+      day: "Sunday, Nov 15",
       time: "1:00 PM–2:00 PM",
       title: "Closing Ceremony & Awards",
       desc: "Celebrate challenge and overall winners, prizes, and the weekend's work.",
@@ -1047,9 +1053,9 @@ function Schedule() {
         </div>
 
         <h2 className="font-serif text-4xl font-light text-[var(--color-q-text)] mb-14 leading-tight">
-          Nov 6{" "}
+          Nov 13{" "}
           <span className="text-[var(--color-q-muted)] font-light">—</span>{" "}
-          Nov 8
+          Nov 15
         </h2>
         <p className="font-mono text-xs text-[var(--color-q-muted)] -mt-8 mb-12">
           Tentative schedule; timings may shift as plans are finalized.
