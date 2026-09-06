@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react"
-import logo from "./imports/qff_logo.png"
+import logo from "./assets/logo.png"
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -715,14 +715,10 @@ function Nav() {
 
       {/* logo — the only place it appears on the whole site */}
       <a href="#top" className="flex items-center gap-2.5 shrink-0">
-        <span className="hidden sm:inline font-mono text-xs text-[var(--color-q-text-dim)] tracking-wider">
-          Qiskit Fall Fest 2026
-        </span>
         <img
           src={logo}
           alt="Qiskit Fall Fest 2026"
-          className="w-9 h-9 rounded-full object-cover"
-          style={{ boxShadow: "0 0 0 1px var(--color-q-border)" }}
+          className="w-40 sm:w-52 h-10 object-contain"
         />
       </a>
     </nav>
@@ -770,11 +766,11 @@ function Hero() {
         </h1>
 
         <p className="font-mono text-xs text-[var(--color-q-muted)] tracking-widest mb-3 uppercase">
-          Columbia, SC · Nov 6–8, 2026
+          Columbia, SC · Nov 6-8, 2026
         </p>
 
         <p className="font-mono text-[11px] text-[var(--color-q-text-dim)] tracking-widest mb-12 uppercase">
-          Opening ceremony 6 PM Fri · Submissions 9 AM Sun · Closes 12 PM Sun
+          Opening ceremony 5 PM Fri · Challenges due 11:59 PM Sat · Closing ceremony 2 PM Sun
         </p>
 
         {/* CTAs */}
@@ -837,18 +833,38 @@ function About() {
   const talks = [
     {
       type: "Workshop",
-      title: "Intro to Quantum Computing with Qiskit",
-      desc: "A hands-on introductory workshop walking through quantum gates, circuits, and running jobs on IBM Quantum hardware using the Qiskit SDK.",
+      title: "Beginner Qiskit Tutorial",
+      desc: "Start with the math background and core Qiskit concepts you need to build and run your first quantum circuit.",
+    },
+    {
+      type: "Workshop",
+      title: "Challenge Tracks",
+      desc: "Choose from beginner, intermediate, and advanced challenges in quantum chemistry, optimization, Hamiltonian simulation, and quantum hardware.",
     },
     {
       type: "Talk",
-      title: "Post-Quantum Cryptography Methods",
-      desc: "An in-depth look at NIST-standardized algorithms (CRYSTALS-Kyber, CRYSTALS-Dilithium) and why classical RSA/ECC are vulnerable to Shor's algorithm.",
+      title: "Quantum Possibilities",
+      desc: "A broad look at what quantum computing can make possible and how the event prompts connect to real-world problems.",
     },
     {
       type: "Talk",
-      title: "IBM Quantum's Hardware Stack",
-      desc: "A deep dive into IBM Eagle, Heron, and Flamingo processors — transmon qubits, lattice surgery, and the roadmap toward error-corrected quantum computing.",
+      title: "Quantum Chemistry",
+      desc: "Explore how quantum computing can help model molecules, materials, and chemical systems.",
+    },
+    {
+      type: "Talk",
+      title: "Quantum Optimization",
+      desc: "Learn how quantum approaches can be applied to difficult search, planning, and resource-allocation problems.",
+    },
+    {
+      type: "Talk",
+      title: "Hamiltonian Simulation",
+      desc: "See how quantum circuits can represent and study the dynamics of physical systems.",
+    },
+    {
+      type: "Talk",
+      title: "Quantum Hardware",
+      desc: "Get an accessible view of the hardware behind quantum computing, including a live demonstration.",
     },
   ]
 
@@ -879,10 +895,10 @@ function About() {
               quantum information science.
             </p>
             <p className="text-[var(--color-q-text-dim)] leading-relaxed">
-              Whether you're writing your first quantum circuit or optimizing
-              variational algorithms, this event is your launchpad. Teams of
-              1–4 will hack for around 40 hours on challenges spanning quantum
-              optimization, machine learning and cryptography.
+              Whether you're writing your first quantum circuit or exploring
+              advanced algorithms, this event is your launchpad. Teams of 1–4
+              will build throughout the weekend, with challenge tracks for
+              different experience levels and interests.
             </p>
           </div>
 
@@ -890,7 +906,7 @@ function About() {
             {[
               { label: "40 hrs", sub: "of hacking" },
               { label: "~80", sub: "participants" },
-              { label: "3", sub: "sessions" },
+              { label: "4", sub: "challenge areas" },
               { label: "Free", sub: "registration" },
             ].map((s) => (
               <div
@@ -959,40 +975,64 @@ function About() {
 function Schedule() {
   const events = [
     {
-      day: "Fri Nov 6",
-      time: "6:00 PM",
+      day: "Friday, Nov 6",
+      time: "5:00 PM",
       title: "Opening Ceremony",
-      desc: "Welcome remarks, sponsor introductions, team formation, and orientation to IBM Quantum resources.",
+      desc: "Welcome, weekend overview, challenge briefing, and event orientation.",
     },
     {
-      day: "Fri Nov 6",
-      time: "8:00 PM",
-      title: "Hacking Begins",
-      desc: "Kickoff. Teams start working on their quantum projects. Mentors available throughout the night.",
+      day: "Friday, Nov 6",
+      time: "5:30 PM",
+      title: "Math Background + Qiskit Tutorial",
+      desc: "A beginner-friendly introduction to the concepts and tools used during the weekend.",
     },
     {
-      day: "Sat Nov 7",
-      time: "All Day",
-      title: "Workshops & Talks",
-      desc: "Introductory Qiskit workshop, talk on post-quantum cryptography, and deep-dive into IBM Quantum's hardware stack. Exact times TBA.",
+      day: "Friday, Nov 6",
+      time: "6:30 PM",
+      title: "Quantum Possibilities + Prompts",
+      desc: "Learn what is possible with the challenge prompts, then review the available resources before prompts release at 7:30 PM.",
     },
     {
-      day: "Sun Nov 8",
-      time: "9:00 AM",
-      title: "Submissions Due",
-      desc: "All project submissions must be finalized by 9 AM. Submit via the event portal with a short writeup and GitHub link.",
+      day: "Saturday, Nov 7",
+      time: "10:00 AM–7:30 PM",
+      title: "Talks, Workshops & Challenge Briefings",
+      desc: "Talks on quantum chemistry, optimization, Hamiltonian simulation, and quantum hardware, with challenge briefings throughout the day.",
     },
     {
-      day: "Sun Nov 8",
+      day: "Saturday, Nov 7",
+      time: "11:59 PM",
+      title: "Challenge Submissions Due",
+      desc: "Submit challenge entries by the deadline. Mentors remain available for questions during the hacking period.",
+    },
+    {
+      day: "Sunday, Nov 8",
+      time: "8:30 AM",
+      title: "Hackathon Submissions Due",
+      desc: "Finalize and submit your hackathon project and any challenge decisions.",
+    },
+    {
+      day: "Sunday, Nov 8",
+      time: "9:00 AM–12:00 PM",
+      title: "Breakfast + Judging",
+      desc: "Judges review projects and challenge entries while teams share their work.",
+    },
+    {
+      day: "Sunday, Nov 8",
       time: "10:00 AM",
-      title: "Demos & Judging",
-      desc: "Teams present their projects to judges. Q&A session and live circuit demonstrations.",
+      title: "Final Keynote",
+      desc: "A final open-topic keynote before the closing program.",
     },
     {
-      day: "Sun Nov 8",
-      time: "12:00 PM",
-      title: "Awards & Closing",
-      desc: "Winner announcements, prize distribution, closing remarks. Event ends at noon.",
+      day: "Sunday, Nov 8",
+      time: "12:00 PM–1:00 PM",
+      title: "Lunch",
+      desc: "Take a break before the closing program.",
+    },
+    {
+      day: "Sunday, Nov 8",
+      time: "1:00 PM–2:00 PM",
+      title: "Closing Ceremony & Awards",
+      desc: "Celebrate challenge and overall winners, prizes, and the weekend's work.",
     },
   ]
 
@@ -1011,6 +1051,9 @@ function Schedule() {
           <span className="text-[var(--color-q-muted)] font-light">—</span>{" "}
           Nov 8
         </h2>
+        <p className="font-mono text-xs text-[var(--color-q-muted)] -mt-8 mb-12">
+          Tentative schedule; timings may shift as plans are finalized.
+        </p>
 
         <div className="relative">
           {/* Timeline spine */}
@@ -1066,20 +1109,59 @@ function Schedule() {
 // ─── Register ────────────────────────────────────────────────────────────────
 
 function Register() {
+  const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit"
+  const SPLITFORMS_ACCESS_KEY = "8a0a510202724b0199619587e23a92c1"
   const [agreed, setAgreed] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [affiliation, setAffiliation] = useState("")
   const [submitted, setSubmitted] = useState(false)
   const [policyOpen, setPolicyOpen] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
   const inputClass =
     "w-full bg-[var(--color-q-dark)] border border-[var(--color-q-border)] rounded-xl px-4 py-3 font-sans text-sm text-[var(--color-q-text)] placeholder-[var(--color-q-muted)] focus:outline-none focus:border-[var(--color-q-accent)] transition-colors"
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!agreed || !name || !email) return
-    setSubmitted(true)
+    if (!agreed || !name || !email || submitting) return
+
+    setSubmitting(true)
+    setSubmitError("")
+
+    try {
+      const response = await fetch(SPLITFORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: SPLITFORMS_ACCESS_KEY,
+          name,
+          email,
+          affiliation,
+          media_release: "agreed",
+          replyto: email,
+          subject: "Qiskit Fall Fest 2026 registration",
+          botcheck: "",
+        }),
+      })
+      const result = await response.json().catch(() => null)
+
+      if (!response.ok || !result?.success) {
+        throw new Error(result?.message || "Submission failed")
+      }
+
+      setSubmitted(true)
+    } catch {
+      setSubmitError(
+        "We couldn't complete your registration. Please try again or contact us directly.",
+      )
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -1232,18 +1314,26 @@ function Register() {
 
             <button
               type="submit"
-              disabled={!agreed || !name || !email}
+              disabled={!agreed || !name || !email || submitting}
               className="w-full py-4 rounded-full font-mono text-sm font-medium tracking-wider transition-all disabled:opacity-30 disabled:cursor-not-allowed"
               style={{
                 background:
-                  agreed && name && email
+                  agreed && name && email && !submitting
                     ? "linear-gradient(135deg, var(--color-q-accent), var(--color-q-accent-2))"
                     : "var(--color-q-border)",
-                color: agreed && name && email ? "#08080b" : "var(--color-q-muted)",
+                color:
+                  agreed && name && email && !submitting
+                    ? "#08080b"
+                    : "var(--color-q-muted)",
               }}
             >
-              Register for Qiskit Fall Fest 2026
+              {submitting ? "Submitting registration..." : "Register for Qiskit Fall Fest 2026"}
             </button>
+            {submitError && (
+              <p className="text-sm text-[var(--color-q-rose)]" role="alert">
+                {submitError}
+              </p>
+            )}
           </form>
         )}
       </div>
