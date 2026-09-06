@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react"
-import logo from "./assets/logo.png"
+import logo from './assets/logo.png'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -714,13 +714,6 @@ function Nav() {
       </div>
 
       {/* logo — the only place it appears on the whole site */}
-      <a href="#top" className="flex items-center gap-2.5 shrink-0">
-        <img
-          src={logo}
-          alt="Qiskit Fall Fest 2026"
-          className="w-40 sm:w-52 h-10 object-contain"
-        />
-      </a>
     </nav>
   )
 }
