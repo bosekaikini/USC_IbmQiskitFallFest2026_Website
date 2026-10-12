@@ -797,7 +797,7 @@ function Hero() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="font-serif text-lg text-[var(--color-q-text)] mb-0.5">
-                Interactive circuit
+                Try it yourself
               </p>
               <p className="font-mono text-[10px] text-[var(--color-q-muted)] tracking-wide">
                 build a circuit, tap any gate to learn what it does
@@ -857,7 +857,7 @@ function About() {
     {
       type: "Talk",
       title: "Quantum Hardware",
-      desc: "Get an accessible view of the hardware behind quantum computing, including a live demonstration.",
+      desc: "Get an accessible view of the hardware behind quantum computing and the systems that support quantum circuits.",
     },
   ]
 
@@ -988,14 +988,8 @@ function Schedule() {
     {
       day: "Saturday, Nov 14",
       time: "10:00 AM–7:30 PM",
-      title: "Guest Talks & Challenge Workshops",
-      desc: "Several guest speakers explore quantum chemistry, quantum optimization, and Hamiltonian simulation, alongside briefings for mini IBM challenges and the overall prompts.",
-    },
-    {
-      day: "Saturday, Nov 14",
-      time: "6:00 PM",
-      title: "Tentative Hardware Demonstration",
-      desc: "An accessible demonstration of quantum hardware and the systems that support the day's talks and challenges.",
+      title: "Tentative Guest Talks & Challenge Workshops",
+      desc: "Several tentative guest talks explore quantum chemistry, quantum optimization, and Hamiltonian simulation, alongside briefings for mini IBM challenges and the overall prompts.",
     },
     {
       day: "Saturday, Nov 14",
@@ -1343,7 +1337,7 @@ function Register() {
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
 function Footer() {
-  const CONTACT_EMAIL = "qiskitfallfest@sc.edu"
+  const CONTACT_EMAILS = ["rrigoni@email.sc.edu", "bkaikini@email.sc.edu"]
 
   return (
     <footer className="border-t border-[var(--color-q-border)] px-6 py-14">
@@ -1352,12 +1346,17 @@ function Footer() {
           <span className="font-mono text-[11px] text-[var(--color-q-accent-2)] tracking-widest uppercase">
             Get in touch
           </span>
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            className="font-serif text-2xl md:text-3xl font-light text-[var(--color-q-text)] hover:text-[var(--color-q-accent-2)] transition-colors"
-          >
-            {CONTACT_EMAIL}
-          </a>
+          <div className="flex flex-col items-center">
+            {CONTACT_EMAILS.map((email) => (
+              <a
+                key={email}
+                href={`mailto:${email}`}
+                className="font-serif text-2xl md:text-3xl font-light text-[var(--color-q-text)] hover:text-[var(--color-q-accent-2)] transition-colors"
+              >
+                {email}
+              </a>
+            ))}
+          </div>
           <p className="font-mono text-xs text-[var(--color-q-muted)] max-w-md">
             Questions about registration, sponsorship, or the event — reach
             out any time.
