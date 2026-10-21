@@ -763,7 +763,7 @@ function Hero() {
         </p>
 
         <p className="font-mono text-[11px] text-[var(--color-q-text-dim)] tracking-widest mb-12 uppercase">
-          Opening ceremony 5 PM Fri · Challenges due 11:59 PM Sat · Closing ceremony 2 PM Sun
+          Opening ceremony 5 PM Fri · Challenges due 11:59 PM Sat · Closing ceremony 9 AM Sun
         </p>
 
         {/* CTAs */}
@@ -898,7 +898,7 @@ function About() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "40 hrs", sub: "of hacking" },
-              { label: "~80", sub: "participants" },
+              { label: "~40", sub: "participants" },
               { label: "3", sub: "overall prompts" },
               { label: "Free", sub: "registration" },
             ].map((s) => (
@@ -976,18 +976,12 @@ function Schedule() {
     {
       day: "Friday, Nov 13",
       time: "5:30 PM",
-      title: "Math Background + Qiskit Tutorial",
-      desc: "A beginner-friendly introduction to the concepts and tools used during the weekend.",
-    },
-    {
-      day: "Friday, Nov 13",
-      time: "6:30 PM",
       title: "Quantum Possibilities + Prompts",
-      desc: "Learn what is possible with the challenge prompts, then review the available resources before prompts release at 7:30 PM.",
+      desc: "Learn what is possible with the challenge prompts, then review the available resources before prompts release at 6:30 PM.",
     },
     {
       day: "Saturday, Nov 14",
-      time: "10:00 AM–7:30 PM",
+      time: "1:00 PM–5:00 PM",
       title: "Tentative Guest Talks & Challenge Workshops",
       desc: "Several tentative guest talks explore quantum chemistry, quantum optimization, and Hamiltonian simulation, alongside briefings for mini IBM challenges and the overall prompts.",
     },
@@ -1006,26 +1000,14 @@ function Schedule() {
     {
       day: "Sunday, Nov 15",
       time: "9:00 AM–12:00 PM",
-      title: "Breakfast + Judging",
-      desc: "Judges review projects and challenge entries while teams share their work.",
+      title: "Breakfast + Judging + Closing Ceremony",
+      desc: "Judging, final keynote, and awards.",
     },
     {
       day: "Sunday, Nov 15",
       time: "10:00 AM",
       title: "Final Keynote",
-      desc: "A final open-topic keynote before the closing program.",
-    },
-    {
-      day: "Sunday, Nov 15",
-      time: "12:00 PM–1:00 PM",
-      title: "Lunch",
-      desc: "Take a break before the closing program.",
-    },
-    {
-      day: "Sunday, Nov 15",
-      time: "1:00 PM–2:00 PM",
-      title: "Closing Ceremony & Awards",
-      desc: "Celebrate challenge and overall winners, prizes, and the weekend's work.",
+      desc: "A final open-topic keynote.",
     },
   ]
 
@@ -1337,7 +1319,11 @@ function Register() {
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
 function Footer() {
-  const CONTACT_EMAILS = ["rrigoni@email.sc.edu", "bkaikini@email.sc.edu"]
+  const CONTACT_EMAILS = [
+    "uscqiskitfallfest@gmail.com",
+    "rrigoni@email.sc.edu",
+    "bkaikini@email.sc.edu",
+  ]
 
   return (
     <footer className="border-t border-[var(--color-q-border)] px-6 py-14">
