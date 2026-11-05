@@ -826,7 +826,7 @@ function About() {
   const talks = [
     {
       type: "Workshop",
-      title: "Beginner Qiskit Tutorial",
+      title: "Beginner Qiskit Tutorial & Quantum Possibilities",
       desc: "Start with the math background and core Qiskit concepts you need to build and run your first quantum circuit.",
     },
     {
@@ -836,28 +836,8 @@ function About() {
     },
     {
       type: "Talk",
-      title: "Quantum Possibilities",
-      desc: "A broad look at what quantum computing can make possible and how the event prompts connect to real-world problems.",
-    },
-    {
-      type: "Talk",
-      title: "Quantum Chemistry",
-      desc: "Explore how quantum computing can help model molecules, materials, and chemical systems.",
-    },
-    {
-      type: "Talk",
-      title: "Quantum Optimization",
-      desc: "Learn how quantum approaches can be applied to difficult search, planning, and resource-allocation problems.",
-    },
-    {
-      type: "Talk",
-      title: "Hamiltonian Simulation",
-      desc: "See how quantum circuits can represent and study the dynamics of physical systems.",
-    },
-    {
-      type: "Talk",
-      title: "Quantum Hardware",
-      desc: "Get an accessible view of the hardware behind quantum computing and the systems that support quantum circuits.",
+      title: "Quantum 2.0",
+      desc: "A look ahead at how quantum technologies can change the world.",
     },
   ]
 
@@ -993,7 +973,7 @@ function Schedule() {
     },
     {
       day: "Sunday, Nov 15",
-      time: "8:30 AM",
+      time: "8:00 AM",
       title: "Hackathon Submissions Due",
       desc: "Finalize and submit your hackathon project and any challenge decisions.",
     },
