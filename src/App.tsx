@@ -763,7 +763,7 @@ function Hero() {
         </p>
 
         <p className="font-mono text-[11px] text-[var(--color-q-text-dim)] tracking-widest mb-12 uppercase">
-          Opening ceremony 5 PM Fri · Challenges due 11:59 PM Sat · Closing ceremony 9 AM Sun
+          QFF overview 4:15 PM Fri · Challenge deadline 9 PM Sat · Awards 11:30 AM Sun
         </p>
 
         {/* CTAs */}
@@ -898,7 +898,7 @@ function About() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "40 hrs", sub: "of hacking" },
-              { label: "~40", sub: "participants" },
+              { label: "~80", sub: "participants" },
               { label: "3", sub: "overall prompts" },
               { label: "Free", sub: "registration" },
             ].map((s) => (
@@ -969,45 +969,75 @@ function Schedule() {
   const events = [
     {
       day: "Friday, Nov 13",
-      time: "5:00 PM",
-      title: "Opening Ceremony",
-      desc: "Welcome, weekend overview, challenge briefing, and event orientation.",
+      time: "4:15–4:30 PM",
+      title: "QFF 2026 Overview",
+      desc: "Welcome and an overview of Qiskit Fall Fest 2026.",
     },
     {
       day: "Friday, Nov 13",
-      time: "5:30 PM",
-      title: "Quantum Possibilities + Prompts",
-      desc: "Learn what is possible with the challenge prompts, then review the available resources before prompts release at 6:30 PM.",
+      time: "4:30–5:15 PM",
+      title: "Quantum Intro",
+      desc: "An introduction to quantum computing and the ideas behind the weekend.",
+    },
+    {
+      day: "Friday, Nov 13",
+      time: "5:15–6:00 PM",
+      title: "Qiskit Intro",
+      desc: "Get started with Qiskit and the tools used during the event.",
+    },
+    {
+      day: "Friday, Nov 13",
+      time: "6:00–6:30 PM",
+      title: "Track Overviews and Q&A",
+      desc: "Review the available tracks and ask questions before the weekend begins.",
     },
     {
       day: "Saturday, Nov 14",
-      time: "1:00 PM–5:00 PM",
-      title: "Tentative Guest Talks & Challenge Workshops",
-      desc: "Several tentative guest talks explore quantum chemistry, quantum optimization, and Hamiltonian simulation, alongside briefings for mini IBM challenges and the overall prompts.",
+      time: "1:00–2:00 PM",
+      title: "Challenge Overview and Release",
+      desc: "Learn about the challenge and receive the challenge materials.",
     },
     {
       day: "Saturday, Nov 14",
-      time: "11:59 PM",
-      title: "Mini Challenge Submissions Due",
-      desc: "Submit mini IBM challenge entries by the deadline while continuing work on the overall prompts.",
+      time: "2:00 PM",
+      title: "Lunch",
+      desc: "Take a break and connect with other participants.",
+    },
+    {
+      day: "Saturday, Nov 14",
+      time: "9:00 PM",
+      title: "Challenge Submission Deadline",
+      desc: "Submit your challenge work by the deadline.",
     },
     {
       day: "Sunday, Nov 15",
-      time: "8:30 AM",
-      title: "Hackathon Submissions Due",
-      desc: "Finalize and submit your hackathon project and any challenge decisions.",
+      time: "8:00 AM",
+      title: "Track Submission Deadline",
+      desc: "Submit your track project by the deadline.",
     },
     {
       day: "Sunday, Nov 15",
-      time: "9:00 AM–12:00 PM",
-      title: "Breakfast + Judging + Closing Ceremony",
-      desc: "Judging, final keynote, and awards.",
+      time: "9:00–9:30 AM",
+      title: "Breakfast",
+      desc: "Grab breakfast before presentations begin.",
     },
     {
       day: "Sunday, Nov 15",
-      time: "10:00 AM",
-      title: "Final Keynote",
-      desc: "A final open-topic keynote.",
+      time: "9:30–10:30 AM",
+      title: "Track Presentations",
+      desc: "Teams present their track projects.",
+    },
+    {
+      day: "Sunday, Nov 15",
+      time: "10:30–11:30 AM",
+      title: "Keynote: Future of Quantum Computing",
+      desc: "Explore what is next for quantum computing.",
+    },
+    {
+      day: "Sunday, Nov 15",
+      time: "11:30 AM–12:00 PM",
+      title: "Awards Ceremony",
+      desc: "Celebrate the weekend's projects and recognize the winners.",
     },
   ]
 
@@ -1027,8 +1057,23 @@ function Schedule() {
           Nov 15
         </h2>
         <p className="font-mono text-xs text-[var(--color-q-muted)] -mt-8 mb-12">
-          Tentative schedule; timings may shift as plans are finalized.
+          All times are local to Columbia, SC.
         </p>
+
+        <div className="grid gap-3 sm:grid-cols-2 mb-14">
+          <div className="rounded-xl border border-[var(--color-q-border)] bg-[var(--color-q-dark)] px-4 py-3">
+            <p className="font-mono text-[10px] tracking-widest uppercase text-[var(--color-q-muted)] mb-1">
+              Friday, Nov 13
+            </p>
+            <p className="text-sm text-[var(--color-q-text)]">Darla Moore 136</p>
+          </div>
+          <div className="rounded-xl border border-[var(--color-q-border)] bg-[var(--color-q-dark)] px-4 py-3">
+            <p className="font-mono text-[10px] tracking-widest uppercase text-[var(--color-q-muted)] mb-1">
+              Saturday & Sunday
+            </p>
+            <p className="text-sm text-[var(--color-q-text)]">Capstone Room</p>
+          </div>
+        </div>
 
         <div className="relative">
           {/* Timeline spine */}
@@ -1319,11 +1364,7 @@ function Register() {
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
 function Footer() {
-  const CONTACT_EMAILS = [
-    "uscqiskitfallfest@gmail.com",
-    "rrigoni@email.sc.edu",
-    "bkaikini@email.sc.edu",
-  ]
+  const CONTACT_EMAILS = ["rrigoni@email.sc.edu", "bkaikini@email.sc.edu"]
 
   return (
     <footer className="border-t border-[var(--color-q-border)] px-6 py-14">
