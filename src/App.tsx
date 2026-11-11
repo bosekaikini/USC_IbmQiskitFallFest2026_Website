@@ -845,11 +845,6 @@ function About() {
       desc: "Explore how quantum computing can help model molecules, materials, and chemical systems.",
     },
     {
-      type: "Talk",
-      title: "Quantum Optimization",
-      desc: "Learn how quantum approaches can be applied to difficult search, planning, and resource-allocation problems.",
-    },
-    {
       type: "Challenge",
       title: "Hamiltonian Simulation",
       desc: "See how quantum circuits can represent and study the dynamics of physical systems.",
