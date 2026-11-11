@@ -763,7 +763,7 @@ function Hero() {
         </p>
 
         <p className="font-mono text-[11px] text-[var(--color-q-text-dim)] tracking-widest mb-12 uppercase">
-          QFF overview 4:15 PM Fri · Challenge deadline 9 PM Sat · Awards 11:30 AM Sun
+          QFF overview 4:30 PM Fri · Lunch & challenges 1 PM Sat · Breakfast & awards 9 AM Sun
         </p>
 
         {/* CTAs */}
@@ -840,7 +840,7 @@ function About() {
       desc: "A broad look at what quantum computing can make possible and how the event prompts connect to real-world problems.",
     },
     {
-      type: "Talk",
+      type: "Challenge",
       title: "Quantum Chemistry",
       desc: "Explore how quantum computing can help model molecules, materials, and chemical systems.",
     },
@@ -850,14 +850,14 @@ function About() {
       desc: "Learn how quantum approaches can be applied to difficult search, planning, and resource-allocation problems.",
     },
     {
-      type: "Talk",
+      type: "Challenge",
       title: "Hamiltonian Simulation",
       desc: "See how quantum circuits can represent and study the dynamics of physical systems.",
     },
     {
       type: "Talk",
-      title: "Quantum Hardware",
-      desc: "Get an accessible view of the hardware behind quantum computing and the systems that support quantum circuits.",
+      title: "Quantum 2.0",
+      desc: "A look ahead at how quantum technologies can change the world.",
     },
   ]
 
@@ -889,7 +889,7 @@ function About() {
             </p>
             <p className="text-[var(--color-q-text-dim)] leading-relaxed">
               Whether you're writing your first quantum circuit or exploring
-              advanced algorithms, this event is your launchpad. Teams of 1–4
+              advanced algorithms, this event is your launchpad. Teams of 1–3
               will build throughout the weekend, with challenge tracks for
               different experience levels and interests.
             </p>
@@ -898,8 +898,8 @@ function About() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "40 hrs", sub: "of hacking" },
-              { label: "~80", sub: "participants" },
-              { label: "3", sub: "overall prompts" },
+              { label: "~40", sub: "participants" },
+              { label: "2", sub: "overall prompts" },
               { label: "Free", sub: "registration" },
             ].map((s) => (
               <div
@@ -969,25 +969,25 @@ function Schedule() {
   const events = [
     {
       day: "Friday, Nov 13",
-      time: "4:15–4:30 PM",
+      time: "4:30–4:45 PM",
       title: "QFF 2026 Overview",
       desc: "Welcome and an overview of Qiskit Fall Fest 2026.",
     },
     {
       day: "Friday, Nov 13",
-      time: "4:30–5:15 PM",
+      time: "4:45–5:30 PM",
       title: "Quantum Intro",
       desc: "An introduction to quantum computing and the ideas behind the weekend.",
     },
     {
       day: "Friday, Nov 13",
-      time: "5:15–6:00 PM",
+      time: "5:30–6:15 PM",
       title: "Qiskit Intro",
       desc: "Get started with Qiskit and the tools used during the event.",
     },
     {
       day: "Friday, Nov 13",
-      time: "6:00–6:30 PM",
+      time: "6:15–6:45 PM",
       title: "Track Overviews and Q&A",
       desc: "Review the available tracks and ask questions before the weekend begins.",
     },
@@ -1030,7 +1030,7 @@ function Schedule() {
     {
       day: "Sunday, Nov 15",
       time: "10:30–11:30 AM",
-      title: "Keynote: Future of Quantum Computing",
+      title: "Keynote: Quantum 2.0",
       desc: "Explore what is next for quantum computing.",
     },
     {
@@ -1065,13 +1065,13 @@ function Schedule() {
             <p className="font-mono text-[10px] tracking-widest uppercase text-[var(--color-q-muted)] mb-1">
               Friday, Nov 13
             </p>
-            <p className="text-sm text-[var(--color-q-text)]">Darla Moore 136</p>
+            <p className="text-sm text-[var(--color-q-text)]">Darla Moore 134</p>
           </div>
           <div className="rounded-xl border border-[var(--color-q-border)] bg-[var(--color-q-dark)] px-4 py-3">
             <p className="font-mono text-[10px] tracking-widest uppercase text-[var(--color-q-muted)] mb-1">
               Saturday & Sunday
             </p>
-            <p className="text-sm text-[var(--color-q-text)]">Capstone Room</p>
+            <p className="text-sm text-[var(--color-q-text)]">Campus Room</p>
           </div>
         </div>
 
