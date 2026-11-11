@@ -1364,7 +1364,7 @@ function Register() {
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
 function Footer() {
-  const CONTACT_EMAILS = ["rrigoni@email.sc.edu", "bkaikini@email.sc.edu"]
+  const CONTACT_EMAILS = ["rrigoni@email.sc.edu", "bkaikini@email.sc.edu", "uscqiskitfallfest@gmail.com"]
 
   return (
     <footer className="border-t border-[var(--color-q-border)] px-6 py-14">
