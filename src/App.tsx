@@ -830,9 +830,9 @@ function About() {
       desc: "Start with the math background and core Qiskit concepts you need to build and run your first quantum circuit.",
     },
     {
-      type: "Workshop",
-      title: "Challenge Tracks",
-      desc: "Work through mini IBM challenges for different experience levels alongside the overall prompts in quantum chemistry, optimization, and Hamiltonian simulation.",
+      type: "Prompts",
+      title: "Main Hackathon Prompts",
+      desc: "Choose between 2 different prompts to make a project for using Qiskit, each with a beginner and advanced bracket.",
     },
     {
       type: "Talk",
