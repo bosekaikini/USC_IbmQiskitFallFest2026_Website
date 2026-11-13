@@ -964,39 +964,33 @@ function Schedule() {
   const events = [
     {
       day: "Friday, Nov 13",
-      time: "4:30–4:45 PM",
+      time: "4:45 PM",
       title: "QFF 2026 Overview",
       desc: "Welcome and an overview of Qiskit Fall Fest 2026.",
     },
     {
       day: "Friday, Nov 13",
-      time: "4:45–5:30 PM",
+      time: "5:00 PM",
       title: "Quantum Intro",
-      desc: "An introduction to quantum computing and the ideas behind the weekend.",
+      desc: "An introduction to quantum computing from our IBM Quantum guest speaker, Mr. Charlie Tabachnick.",
     },
     {
       day: "Friday, Nov 13",
-      time: "5:30–6:15 PM",
-      title: "Qiskit Intro",
+      time: "5:45 PM",
+      title: "Qiskit Basics",
       desc: "Get started with Qiskit and the tools used during the event.",
     },
     {
       day: "Friday, Nov 13",
-      time: "6:15–6:45 PM",
+      time: "6:305 PM",
       title: "Track Overviews and Q&A",
       desc: "Review the available tracks and ask questions before the weekend begins.",
     },
     {
       day: "Saturday, Nov 14",
       time: "1:00–2:00 PM",
-      title: "Challenge Overview and Release",
-      desc: "Learn about the challenge and receive the challenge materials.",
-    },
-    {
-      day: "Saturday, Nov 14",
-      time: "2:00 PM",
-      title: "Lunch",
-      desc: "Take a break and connect with other participants.",
+      title: "Challenge Overview and Release + Lunch",
+      desc: "Learn about the challenge and receive the challenge materials over lunch.",
     },
     {
       day: "Saturday, Nov 14",
