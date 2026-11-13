@@ -964,25 +964,25 @@ function Schedule() {
   const events = [
     {
       day: "Friday, Nov 13",
-      time: "4:45 PM",
+      time: "4:45-5:00 PM",
       title: "QFF 2026 Overview",
       desc: "Welcome and an overview of Qiskit Fall Fest 2026.",
     },
     {
       day: "Friday, Nov 13",
-      time: "5:00 PM",
+      time: "5:00-5:45 PM",
       title: "Quantum Intro",
       desc: "An introduction to quantum computing from our IBM Quantum guest speaker, Mr. Charlie Tabachnick.",
     },
     {
       day: "Friday, Nov 13",
-      time: "5:45 PM",
+      time: "5:45-6:30 PM",
       title: "Qiskit Basics",
       desc: "Get started with Qiskit and the tools used during the event.",
     },
     {
       day: "Friday, Nov 13",
-      time: "6:305 PM",
+      time: "6:30 PM",
       title: "Track Overviews and Q&A",
       desc: "Review the available tracks and ask questions before the weekend begins.",
     },
@@ -995,13 +995,13 @@ function Schedule() {
     {
       day: "Saturday, Nov 14",
       time: "9:00 PM",
-      title: "Challenge Submission Deadline",
+      title: "Challenge Submission Deadline (online)",
       desc: "Submit your challenge work by the deadline.",
     },
     {
       day: "Sunday, Nov 15",
       time: "8:00 AM",
-      title: "Track Submission Deadline",
+      title: "Track Submission Deadline (online)",
       desc: "Submit your track project by the deadline.",
     },
     {
